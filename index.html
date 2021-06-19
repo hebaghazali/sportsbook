@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Sports Book</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-logo">
+        <h1>SPORTS<span>BOOK</span></h1>
+      </div>
+      <div class="nav-content">
+        <i class="fas fa-bell"><div class="notification">6</div></i>
+        <i class="fas fa-user"></i>
+        <div class="cash">1,250.67 USD <i class="fas fa-chevron-down"></i></div>
+        <button class="deposit">Deposit</button>
+      </div>
+    </nav>
+    <div class="main-content">
+      <aside class="sidebar" aria-label="sidebar">
+        <div class="sidebar-content" id="sidebar-content">
+          <ul class="sidebar-list">
+            <li class="active">
+              <i class="fas fa-home"></i><a href="#">Home</a>
+            </li>
+            <li>
+              <i class="fas fa-tv"></i><a href="#">In-Play</a>
+              <p class="notifications-number">64</p>
+            </li>
+          </ul>
+          <ul class="top-sports-content">
+            <h5>Top Sports</h5>
+            <li>
+              <i class="fas fa-futbol"></i><a href="#">Soccer</a>
+              <p class="notifications-number">26</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-hockey-puck"></i> <a href="#">Ice Hockey</a>
+              <p class="notifications-number">13</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-basketball-ball"></i> <a href="#">Basketball</a>
+              <p class="notifications-number">5</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-table-tennis"></i><a href="#">Tennis</a>
+              <p class="notifications-number">3</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-volleyball-ball"></i> <a href="#">Volleyball</a>
+              <p class="notifications-number">1</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-football-ball"></i
+              ><a href="#">American football</a>
+              <p class="notifications-number">2</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-baseball-ball"></i><a href="#">Baseball</a>
+              <p class="notifications-number">2</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+          </ul>
+          <ul class="other-sports-content">
+            <h5>Other Sports</h5>
+            <li>
+              <i class="fas fa-futbol"></i> <a href="#">Aussie Rules</a>
+              <p class="notifications-number">2</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-futbol"></i><a href="#">Badminton</a>
+              <p class="notifications-number">2</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-futbol"></i> <a href="#">Beach volley</a>
+              <p class="notifications-number">2</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-futbol"></i><a href="#">Bowls</a>
+              <p class="notifications-number">2</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-futbol"></i><a href="#">Cricket</a>
+              <p class="notifications-number">2</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-futbol"></i><a href="#">Darts</a>
+              <p class="notifications-number">2</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-futbol"></i> <a href="#">Field Hockey</a>
+              <p class="notifications-number">2</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-futbol"></i><a href="#">Futsal</a>
+              <p class="notifications-number">26</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-futbol"></i><a href="#">Handball</a>
+              <p class="notifications-number">2</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-futbol"></i><a href="#">Rugby</a>
+              <p class="notifications-number">2</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-futbol"></i><a href="#">Squash</a>
+              <p class="notifications-number">2</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <i class="fas fa-futbol"></i><a href="#">Snooker</a>
+              <p class="notifications-number">2</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="main-section">
+        <div class="banner">
+          <h4>PROMO</h4>
+          <h1>Bet $5 Get $20 <br />Free Bet</h1>
+          <button>Get Started</button>
+        </div>
+        <div class="top-events-section">
+          <h3 class="heading">Top Events</h3>
+          <div class="events">
+            <div class="event">
+              <p class="number">72'</p>
+              <p>Liverpool - Paris <span>2-0</span></p>
+              <p class="league">
+                <i class="fas fa-futbol"></i> UEFA Champions League
+              </p>
+              <div class="scores">
+                <div class="liverpool">
+                  LIVERPOOL
+                  <div class="volume">1.40</div>
+                </div>
+                <div class="draw">
+                  DRAW
+                  <div class="volume">5.17</div>
+                </div>
+                <div class="paris">
+                  PARIS
+                  <div class="volume"><i class="fas fa-sort-down"></i>11.0</div>
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <p class="number">72'</p>
+              <p>Liverpool - Paris <span>0-1</span></p>
+              <p class="league"><i class="fas fa-hockey-puck"></i> NHL</p>
+              <div class="scores">
+                <div class="liverpool">
+                  LIVERPOOL
+                  <div class="volume">1.40</div>
+                </div>
+                <div class="draw">
+                  DRAW
+                  <div class="volume">5.17</div>
+                </div>
+                <div class="paris">
+                  PARIS
+                  <div class="volume"><i class="fas fa-sort-up"></i>11.0</div>
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <p class="number">13 Mar, 12:00</p>
+              <p>Atletico Madrid - Arsenal</p>
+              <p class="league">
+                <i class="fas fa-futbol"></i> UEFA Champions League
+              </p>
+              <div class="scores">
+                <div class="liverpool">
+                  LIVERPOOL
+                  <div class="volume">1.40</div>
+                </div>
+                <div class="draw">
+                  DRAW
+                  <div class="volume">5.17</div>
+                </div>
+                <div class="paris">
+                  PARIS
+                  <div class="volume"><i class="fas fa-sort-up"></i>11.0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="in-play-section">
+          <h3 class="heading">In Play</h3>
+          <div class="in-plays">
+            <div class="in-play">
+              <div class="league">
+                <p class="league-title">
+                  <i class="fas fa-futbol"></i>UEFA Champions League
+                </p>
+                <div class="match-rounds">
+                  <p>1</p>
+                  <p>X</p>
+                  <p>2</p>
+                </div>
+              </div>
+              <div class="matches">
+                <div class="match">
+                  <div class="number">41'</div>
+                  <div class="clubs">
+                    <div class="club">
+                      <img
+                        src="./img/paris.png"
+                        alt="paris-logo"
+                        class="icon"
+                      />
+                      Paris
+                    </div>
+                    <div class="club">
+                      <img
+                        src="./img/liverpool.png"
+                        alt="liverpool-logo"
+                        class="icon"
+                      />
+                      Liverpool
+                    </div>
+                  </div>
+                  <div class="match-goals">
+                    <div class="goals">
+                      <span>1</span>
+                      <span>0</span>
+                    </div>
+                    <div class="goals">
+                      <span>0</span>
+                      <span>2</span>
+                    </div>
+                    <div class="main-goals">
+                      <span>1</span>
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="match-scores">
+                  <div class="first">
+                    <p><i class="fas fa-sort-up"></i> 1.40</p>
+                  </div>
+                  <div class="x"><p>5.17</p></div>
+                  <div class="second"><p>11.09</p></div>
+                </div>
+                <div class="total-scores">
+                  <p>75</p>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="matches">
+                <div class="match">
+                  <div class="number">11'</div>
+                  <div class="clubs">
+                    <div class="club">
+                      <img
+                        src="./img/atletico-madrid.png"
+                        alt="atletico-madrid-logo"
+                        class="icon"
+                      />
+                      Atletico Madrid
+                    </div>
+                    <div class="club">
+                      <img
+                        src="./img/arsenal.png"
+                        alt="arsenal-logo"
+                        class="icon"
+                      />
+                      Arsenal
+                    </div>
+                  </div>
+                  <div class="match-goals">
+                    <div class="goals">
+                      <span>0</span>
+                      <span>0</span>
+                    </div>
+                    <div class="main-goals">
+                      <span>0</span>
+                      <span>0</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="match-scores">
+                  <div class="first">
+                    <p>1.40</p>
+                  </div>
+                  <div class="x"><p>7.88</p></div>
+                  <div class="second"><p>11.09</p></div>
+                </div>
+                <div class="total-scores">
+                  <p>112</p>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="matches">
+                <div class="match">
+                  <div class="number">5'</div>
+                  <div class="clubs">
+                    <div class="club">
+                      <img src="./img/ajax.png" alt="ajax-logo" class="icon" />
+                      Ajax
+                    </div>
+                    <div class="club">
+                      <img
+                        src="./img/real-madrid.png"
+                        alt="real-madrid-logo"
+                        class="icon"
+                      />
+                      Real Madrid
+                    </div>
+                  </div>
+                  <div class="match-goals">
+                    <div class="goals">
+                      <span>0</span>
+                      <span>0</span>
+                    </div>
+                    <div class="main-goals">
+                      <span>0</span>
+                      <span>0</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="match-scores">
+                  <div class="first">
+                    <p>1.40</p>
+                  </div>
+                  <div class="x">
+                    <p><i class="fas fa-sort-down"></i> 5.17</p>
+                  </div>
+                  <div class="second"><p>11.09</p></div>
+                </div>
+                <div class="total-scores">
+                  <p>75</p>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="in-play">
+              <div class="league">
+                <p class="league-title">
+                  <i class="fas fa-futbol"></i> Bundesliga
+                </p>
+                <div class="match-rounds">
+                  <p>1</p>
+                  <p>X</p>
+                  <p>2</p>
+                </div>
+              </div>
+              <div class="matches">
+                <div class="match">
+                  <div class="number">71'</div>
+                  <div class="clubs">
+                    <div class="club">
+                      <img
+                        src="./img/werder-bremen.png"
+                        alt="werder-bremen-logo"
+                        class="icon"
+                      />
+                      Werder Bremen
+                    </div>
+                    <div class="club">
+                      <img
+                        src="./img/borussia-dortmund.png"
+                        alt="borussia-dortmund-logo"
+                        class="icon"
+                      />
+                      Borussia Dortmund
+                    </div>
+                  </div>
+                  <div class="match-goals">
+                    <div class="goals">
+                      <span>0</span>
+                      <span>1</span>
+                    </div>
+                    <div class="goals">
+                      <span>2</span>
+                      <span>0</span>
+                    </div>
+                    <div class="main-goals">
+                      <span>2</span>
+                      <span>1</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="match-scores">
+                  <div class="first">
+                    <p><i class="fas fa-sort-up"></i> 1.40</p>
+                  </div>
+                  <div class="x"><p>5.17</p></div>
+                  <div class="second">
+                    <p><i class="fas fa-sort-down"></i> 11.09</p>
+                  </div>
+                </div>
+                <div class="total-scores">
+                  <p>75</p>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="matches">
+                <div class="match">
+                  <div class="number">2'</div>
+                  <div class="clubs">
+                    <div class="club">
+                      <img
+                        src="./img/bayer-leverkusen.png"
+                        alt="bayer-leverkusen-logo"
+                        class="icon"
+                      />
+                      Bayer Leverkusen
+                    </div>
+                    <div class="club">
+                      <img
+                        src="./img/heidenheim.png"
+                        alt="heidenheim-logo"
+                        class="icon"
+                      />
+                      Heidenheim
+                    </div>
+                  </div>
+                  <div class="match-goals">
+                    <div class="goals">
+                      <span>0</span>
+                      <span>0</span>
+                    </div>
+                    <div class="main-goals">
+                      <span>0</span>
+                      <span>0</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="match-scores">
+                  <div class="first">
+                    <p>1.40</p>
+                  </div>
+                  <div class="x"><p>5.17</p></div>
+                  <div class="second"><p>11.09</p></div>
+                </div>
+                <div class="total-scores">
+                  <p>15</p>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="in-play">
+              <div class="league">
+                <p class="league-title">
+                  <i class="fas fa-hockey-puck"></i> NHL
+                </p>
+                <div class="match-rounds">
+                  <p>1</p>
+                  <p>X</p>
+                  <p>2</p>
+                </div>
+              </div>
+              <div class="matches">
+                <div class="match">
+                  <div class="number">41'</div>
+                  <div class="clubs">
+                    <div class="club">
+                      <img
+                        src="./img/boston-bruins.png"
+                        alt="boston-bruins-logo"
+                        class="icon"
+                      />
+                      Boston Bruins
+                    </div>
+                    <div class="club">
+                      <img
+                        src="./img/dallas-stars.png"
+                        alt="dallas-stars-logo"
+                        class="icon"
+                      />
+                      Dallas Stars
+                    </div>
+                  </div>
+                  <div class="match-goals">
+                    <div class="goals">
+                      <span>0</span>
+                      <span>1</span>
+                    </div>
+                    <div class="goals">
+                      <span>1</span>
+                      <span>0</span>
+                    </div>
+                    <div class="goals">
+                      <span>0</span>
+                      <span>2</span>
+                    </div>
+                    <div class="main-goals">
+                      <span>1</span>
+                      <span>3</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="match-scores">
+                  <div class="first">
+                    <p><i class="fas fa-sort-up"></i> 1.40</p>
+                  </div>
+                  <div class="x"><p>5.17</p></div>
+                  <div class="second"><p>11.09</p></div>
+                </div>
+                <div class="total-scores">
+                  <p>75</p>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <aside class="rh-sidebar" aria-label="sidebar">
+        <div class="rh-sidebar__titles">
+          <div class="bet-slip-title active">Bet Slip</div>
+          <div class="my-bets-title">My Bets</div>
+        </div>
+        <div class="warning">
+          <i class="fas fa-exclamation-circle"></i>
+          <p>Stake amount too high</p>
+          <button>Clear slip</button>
+        </div>
+        <div class="checkout">
+          <div class="winner">
+            <h5>Atletico Madrid</h5>
+            <h5 class="final-score">5.17</h5>
+            <span>&times;</span>
+          </div>
+          <p>Winner FT <br />Atletico Madrid vs Arsenal</p>
+          <div class="stake-return-container">
+            <div class="stake">
+              <p>Stake</p>
+              <p class="digits">100</p>
+            </div>
+            <div class="return">
+              <p>Return</p>
+              <p class="digits">$517.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="checkout">
+          <div class="winner">
+            <h5>Arsenal</h5>
+            <h5 class="final-score">2.12</h5>
+            <span>&times;</span>
+          </div>
+          <p>Winner FT <br />Atletico Madrid vs Arsenal</p>
+          <div class="stake-return-container">
+            <div class="stake">
+              <p>Stake</p>
+              <p class="digits">0</p>
+            </div>
+            <div class="return">
+              <p>Return</p>
+              <p class="digits">-</p>
+            </div>
+          </div>
+        </div>
+        <div class="multiplies">
+          <p>Multiplies</p>
+        </div>
+        <div class="checkout">
+          <div class="winner">
+            <h5 class="doubles">
+              Doubles <i class="fas fa-exclamation-circle"></i>
+            </h5>
+            <h5 class="final-score">11.21</h5>
+            <span>&times;</span>
+          </div>
+          <div class="stake-return-container">
+            <div class="stake">
+              <p>Stake</p>
+              <p class="digits">10</p>
+            </div>
+            <div class="return">
+              <p>Return</p>
+              <p class="digits">$112.10</p>
+            </div>
+          </div>
+        </div>
+        <div class="place-bets-container">
+          <div class="total-stake">
+            <p class="title">Total stake</p>
+            <p>$110.00</p>
+          </div>
+          <div class="total-to-return">
+            <p>Total to return</p>
+            <p>$629.00</p>
+          </div>
+          <button class="place-bets">Place bets</button>
+        </div>
+        <div class="bet-now">
+          <h4>NHL is in quarter finals</h4>
+          <button>Bet now</button>
+        </div>
+      </aside>
+    </div>
+    <div class="notice">
+      <div class="heading">
+        <h5>Werdex Bremen - Heidenheim</h5>
+        <h5>1.22</h5>
+      </div>
+      <div class="winner">
+        <p class="club">Winner, Werdex Bremen</p>
+        <p class="time">25 Mar 16:00</p>
+      </div>
+      <div class="rate">
+        <div class="stake">
+          <p class="title">Stake</p>
+          <p>$10.00</p>
+        </div>
+        <div class="return">
+          <p class="title">Return</p>
+          <p>$10</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
